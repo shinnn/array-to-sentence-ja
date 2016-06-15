@@ -1,0 +1,41 @@
+{
+  "name": "array-to-sentence-ja",
+  "description": "Japanese-friendly version of array-to-sentence",
+  "keywords": [
+    "to-sentence",
+    "sentence",
+    "array",
+    "join",
+    "human",
+    "readable",
+    "string",
+    "separator",
+    "comma",
+    "and",
+    "natural-language",
+    "ja",
+    "japanese"
+  ],
+  "main": "browser.js",
+  "moduleType": "globals",
+  "homepage": "https://github.com/shinnn/array-to-sentence-ja",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shinnn/array-to-sentence-ja.git"
+  },
+  "authors": [
+    "Shinnosuke Watanabe (https://github.com/shinnn)"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "array-to-sentence": "^1.1.0"
+  },
+  "ignore": [
+    "**/.*",
+    "*.js",
+    "*.json",
+    "*.yml",
+    "coverage",
+    "node_modules"
+  ]
+}
