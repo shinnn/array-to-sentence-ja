@@ -3,8 +3,8 @@
 [![NPM version](https://img.shields.io/npm/v/array-to-sentence-ja.svg)](https://www.npmjs.com/package/array-to-sentence-ja)
 [![Build Status](https://travis-ci.org/shinnn/array-to-sentence-ja.svg?branch=master)](https://travis-ci.org/shinnn/array-to-sentence-ja)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/array-to-sentence-ja.svg)](https://coveralls.io/github/shinnn/array-to-sentence-ja?branch=master)
-[![Dependency Status](https://david-dm.org/shinnn/array-to-sentence-ja.svg)](https://david-dm.org/shinnn/array-to-sentence-ja)
-[![devDependency Status](https://david-dm.org/shinnn/array-to-sentence-ja/dev-status.svg)](https://david-dm.org/shinnn/array-to-sentence-ja#info=devDependencies)
+[![dependencies Status](https://david-dm.org/shinnn/array-to-sentence-ja/status.svg)](https://david-dm.org/shinnn/array-to-sentence-ja)
+[![devDependencies Status](https://david-dm.org/shinnn/array-to-sentence-ja/dev-status.svg)](https://david-dm.org/shinnn/array-to-sentence-ja?type=dev)
 
 Japanese-friendly version of [array-to-sentence](https://github.com/shinnn/array-to-sentence):
 
