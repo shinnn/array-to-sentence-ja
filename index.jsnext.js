@@ -1,5 +1,5 @@
 /*!
- * array-to-sentence-ja | MIT (c) Shinnosuke Watanabe
+ * array-to-sentence-ja | ISC (c) Shinnosuke Watanabe
  * https://github.com/shinnn/array-to-sentence-ja
 */
 import arrayToSentence from 'array-to-sentence';

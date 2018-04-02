@@ -26,7 +26,7 @@
   "authors": [
     "Shinnosuke Watanabe (https://github.com/shinnn)"
   ],
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "array-to-sentence": "^1.1.0"
   },

@@ -9,7 +9,7 @@
     "test": "node --throw-deprecation --track-heap-objects test.js | tap-spec",
     "coverage": "istanbul cover -x=bower_components/array-to-sentence/* test.js"
   },
-  "license": "MIT",
+  "license": "ISC",
   "jsnext:main": "index.jsnext.js",
   "files": [
     "index.js",
