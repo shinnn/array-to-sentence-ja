@@ -16,21 +16,11 @@ arrayToSentenceJa(['春', '夏', '秋', '冬']); //=> '春、夏、秋および�
 
 ## Installation
 
-#### [npm](https://www.npmjs.com/)
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/getting-started/what-is-npm).
 
 ```
 npm install array-to-sentence-ja
 ```
-
-#### [Bower](http://bower.io/)
-
-```
-bower install array-to-sentence-ja
-```
-
-### Standalone
-
-[Download the script file directly.](https://raw.githubusercontent.com/shinnn/array-to-sentence-ja/master/browser.js)
 
 ## API
 

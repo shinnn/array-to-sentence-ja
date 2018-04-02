@@ -1,13 +1,9 @@
 'use strict';
 
-const requireBowerFiles = require('require-bower-files');
 const requireFromString = require('require-from-string');
 const {rollup} = require('rollup');
 const rollupNodeResolve = require('rollup-plugin-node-resolve');
 const test = require('tape');
-
-global.window = {};
-requireBowerFiles({self: true});
 
 function runTest(arrayToSentenceJa, description) {
   test(description, t => {
@@ -55,6 +51,5 @@ rollup({
   plugins: rollupNodeResolve({jsnext: true})
 }).then(bundle => {
   runTest(require('.'), 'require(\'array-to-sentence-ja\')');
-  runTest(global.window.arrayToSentenceJa, 'window.arrayToSentenceJa');
   runTest(requireFromString(bundle.generate({format: 'cjs'}).code), 'Module exports');
 });
