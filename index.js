@@ -1,15 +1,17 @@
+'use strict';
+
+var arrayToSentence = require('array-to-sentence');
+
 /*!
  * array-to-sentence-ja | ISC (c) Shinnosuke Watanabe
  * https://github.com/shinnn/array-to-sentence-ja
 */
-'use strict';
 
-var arrayToSentence = require('array-to-sentence');
-var objectAssign = require('object-assign');
+function arrayToSentenceJa(arr, options) {
+	return arrayToSentence(arr, Object.assign({
+		separator: '、',
+		lastSeparator: 'および'
+	}, options));
+}
 
-module.exports = function arrayToSentenceJa(arr, options) {
-  return arrayToSentence(arr, objectAssign({
-    separator: '、',
-    lastSeparator: 'および'
-  }, options));
-};
+module.exports = arrayToSentenceJa;

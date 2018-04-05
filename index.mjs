@@ -5,8 +5,8 @@
 import arrayToSentence from 'array-to-sentence';
 
 export default function arrayToSentenceJa(arr, options) {
-  return arrayToSentence(arr, Object.assign({
-    separator: '、',
-    lastSeparator: 'および'
-  }, options));
+	return arrayToSentence(arr, Object.assign({
+		separator: '、',
+		lastSeparator: 'および'
+	}, options));
 }

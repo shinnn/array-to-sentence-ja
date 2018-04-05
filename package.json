@@ -1,49 +1,50 @@
 {
-  "name": "array-to-sentence-ja",
-  "version": "2.0.0-0",
-  "description": "Japanese-friendly version of array-to-sentence",
-  "repository": "shinnn/array-to-sentence-ja",
-  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
-  "scripts": {
-    "pretest": "eslint --fix --config @shinnn --ignore-path .gitignore .",
-    "test": "node --throw-deprecation --track-heap-objects test.js | tap-spec",
-    "coverage": "istanbul cover -x=bower_components/array-to-sentence/* test.js"
-  },
-  "license": "ISC",
-  "jsnext:main": "index.jsnext.js",
-  "files": [
-    "index.js",
-    "index.jsnext.js"
-  ],
-  "keywords": [
-    "to-sentence",
-    "sentence",
-    "array",
-    "join",
-    "human",
-    "readable",
-    "string",
-    "separator",
-    "comma",
-    "and",
-    "natural-language",
-    "ja",
-    "japanese",
-    "browser",
-    "client-side"
-  ],
-  "dependencies": {
-    "array-to-sentence": "^1.1.0",
-    "object-assign": "^4.1.0"
-  },
-  "devDependencies": {
-    "@shinnn/eslint-config": "^3.0.2",
-    "eslint": "^3.4.0",
-    "istanbul": "^0.4.5",
-    "require-from-string": "^1.2.0",
-    "rollup": "^0.34.13",
-    "rollup-plugin-node-resolve": "^2.0.0",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.6.0"
-  }
+	"name": "array-to-sentence-ja",
+	"version": "2.0.0-0",
+	"description": "Japanese version of array-to-sentence",
+	"repository": "shinnn/array-to-sentence-ja",
+	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"scripts": {
+		"prebuild": "eslint --fix --format=codeframe module.mjs test.js",
+		"build": "rollup --config=node:module",
+		"pretest": "npm run-script build",
+		"test": "nyc --reporter=html --reporter=text node test.js"
+	},
+	"license": "ISC",
+	"module": "index.mjs",
+	"files": [
+		"index.js",
+		"index.mjs"
+	],
+	"keywords": [
+		"to-sentence",
+		"sentence",
+		"array",
+		"join",
+		"human",
+		"readable",
+		"string",
+		"separator",
+		"comma",
+		"and",
+		"natural-language",
+		"ja",
+		"japanese",
+		"browser",
+		"client-side"
+	],
+	"dependencies": {
+		"array-to-sentence": "^2.0.0"
+	},
+	"devDependencies": {
+		"@shinnn/eslint-config": "^5.4.0",
+		"eslint": "^4.19.1",
+		"nyc": "^11.6.0",
+		"rollup": "^0.57.1",
+		"rollup-config-module": "^2.0.0",
+		"tape": "^4.9.0"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn"
+	}
 }
