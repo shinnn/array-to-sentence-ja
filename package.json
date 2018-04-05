@@ -1,6 +1,6 @@
 {
 	"name": "array-to-sentence-ja",
-	"version": "2.0.0-0",
+	"version": "2.0.0",
 	"description": "Japanese version of array-to-sentence",
 	"repository": "shinnn/array-to-sentence-ja",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
