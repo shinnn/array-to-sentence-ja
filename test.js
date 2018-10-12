@@ -23,19 +23,19 @@ test('arrayToSentenceJa()', t => {
 
 	t.throws(
 		() => arrayToSentenceJa('foo', null),
-		/^TypeError.*Expected an array, but got a non-array value foo\./,
+		/^TypeError.*Expected an array, but got a non-array value foo\./u,
 		'should throw a type error when the first argument is not an array.'
 	);
 
 	t.throws(
 		() => arrayToSentenceJa([], {separator: false}),
-		/^TypeError.*Expected `separator` option to be a string, but got a non-string value false\./,
+		/^TypeError.*Expected `separator` option to be a string, but got a non-string value false\./u,
 		'should throw a type error when `separator` option is not a string.'
 	);
 
 	t.throws(
 		() => arrayToSentenceJa([], {lastSeparator: true}),
-		/^TypeError.*Expected `lastSeparator` option to be a string, but got a non-string value true\./,
+		/^TypeError.*Expected `lastSeparator` option to be a string, but got a non-string value true\./u,
 		'should throw a type error when `lastSeparator` option is not a string.'
 	);
 

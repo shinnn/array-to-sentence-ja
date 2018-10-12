@@ -4,13 +4,13 @@
 	"description": "Japanese version of array-to-sentence",
 	"repository": "shinnn/array-to-sentence-ja",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"license": "ISC",
 	"scripts": {
-		"prebuild": "eslint --fix --format=codeframe module.mjs test.js",
+		"prebuild": "eslint .",
 		"build": "rollup --config=node:module",
 		"pretest": "npm run-script build",
-		"test": "nyc --reporter=html --reporter=text node test.js"
+		"test": "nyc node test.js"
 	},
-	"license": "ISC",
 	"module": "index.mjs",
 	"files": [
 		"index.js",
@@ -37,14 +37,21 @@
 		"array-to-sentence": "^2.0.0"
 	},
 	"devDependencies": {
-		"@shinnn/eslint-config": "^5.4.0",
-		"eslint": "^4.19.1",
-		"nyc": "^11.6.0",
-		"rollup": "^0.57.1",
-		"rollup-config-module": "^2.0.0",
-		"tape": "^4.9.0"
+		"@shinnn/eslint-config": "^6.7.2",
+		"eslint": "^5.6.1",
+		"nyc": "^13.0.1",
+		"nyc-config-common": "^1.0.0",
+		"rollup": "^0.66.6",
+		"rollup-config-module": "^2.0.1",
+		"tape": "^4.9.1"
 	},
 	"eslintConfig": {
-		"extends": "@shinnn"
+		"extends": "@shinnn",
+		"rules": {
+			"prefer-object-spread": "off"
+		}
+	},
+	"nyc": {
+		"extends": "nyc-config-common"
 	}
 }

@@ -7,11 +7,9 @@ var arrayToSentence = require('array-to-sentence');
  * https://github.com/shinnn/array-to-sentence-ja
 */
 
-function arrayToSentenceJa(arr, options) {
+module.exports = function arrayToSentenceJa(arr, options) {
 	return arrayToSentence(arr, Object.assign({
 		separator: '、',
 		lastSeparator: 'および'
 	}, options));
 }
-
-module.exports = arrayToSentenceJa;
