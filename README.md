@@ -1,7 +1,7 @@
 # array-to-sentence-ja
 
 [![npm version](https://img.shields.io/npm/v/array-to-sentence-ja.svg)](https://www.npmjs.com/package/array-to-sentence-ja)
-[![Build Status](https://travis-ci.org/shinnn/array-to-sentence-ja.svg?branch=master)](https://travis-ci.org/shinnn/array-to-sentence-ja)
+[![Build Status](https://travis-ci.com/shinnn/array-to-sentence-ja.svg?branch=master)](https://travis-ci.com/shinnn/array-to-sentence-ja)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/array-to-sentence-ja.svg)](https://coveralls.io/github/shinnn/array-to-sentence-ja?branch=master)
 
 Japanese version of [array-to-sentence](https://github.com/shinnn/array-to-sentence):
